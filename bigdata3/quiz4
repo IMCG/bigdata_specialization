@@ -1,0 +1,5 @@
+1. sqlCtx.sql("select * from orders where order_status = 'SUSPECTED_FRAUD'").count()
+2. sqlCtx.sql("select order_item_order_id, sum(order_item_subtotal) as sum_subtotal from order_items group by order_item_order_id order by sum_subtotal desc").show(3)
+3. joindata = sqlCtx.sql("select order_item_subtotal, order_id, order_customer_id, order_status from orders join order_items on orders.order_id == order_items.order_item_order_id")
+
+joindata.registerTempTable("joindata")
