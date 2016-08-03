@@ -1,4 +1,4 @@
-Practice objectives:
+Practice Objectives:
  * Recognize different data elements in your own work and in everyday life problems
  * Explain why your team needs to design a Big Data Infrastructure Plan and Information System Design
  * Identify the frequent data operations required for various types of data
